@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: "#030413",
         secondary: "#E7C549",
-        third: "#4831D4",
+        third: "#0C062E",
         white: "#EAEDFF",
         border: "#5656562e",
       },
@@ -15,9 +15,13 @@ module.exports = {
       },
       dropShadow: {
         logoShadow: "0px 0px 5px rgba(0, 0, 0, 0.6)",
+        "block-shadow": "0px 0px 5px #FFC800",
       },
       backgroundImage: {
         "background-image": "url('./assets/background-image.svg')",
+      },
+      borderColor: {
+        "border-color-primary": "#FFEA9F",
       },
     },
   },

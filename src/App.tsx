@@ -3,6 +3,8 @@ import { Header } from "./components/Header";
 import BackgroundImage from "./assets/background-image.svg";
 import info from "./service/info.json";
 
+import cssIcon from "./assets/css-icon.svg";
+
 function App() {
   return (
     <div className="App">
@@ -43,6 +45,25 @@ function App() {
               </span>
             </>
           ))}
+        </div>
+      </section>
+      <section className="pt-20 min-h-screen bg-primary flex items-center justify-center text-center">
+        <img
+          src={BackgroundImage}
+          className="animation min-w-[400px] min-h-[400px] absolute z-0 "
+        />
+        <div className="realtive z-10">
+          <div className="grid grid-cols-3 gap-10 md:grid-cols-4 md:gap-14">
+            {info.technology.map((tec) => (
+              <div className="w-24 h-24 bg-secondary cursor-pointer border-[1px] border-border-color-primary rounded drop-shadow-block-shadow">
+                <img
+                  className="p-2"
+                  title={tec.title}
+                  src={`src/assets/${tec.image}.svg`}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
