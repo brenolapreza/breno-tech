@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: "#030413",
         secondary: "#E7C549",
-        third: "#0C062E",
+        third: "#121212",
         white: "#EAEDFF",
         border: "#5656562e",
       },
@@ -19,6 +19,10 @@ module.exports = {
       },
       backgroundImage: {
         "background-image": "url('./assets/background-image.svg')",
+        "background-main-home": "url('./assets/backgroun-main-home.jpg')",
+        "background-secoudary-home":
+          "url('./assets/background-secoudary-home.jpg')",
+        "background-thirdy-home": "url('./assets/background-thirdy-home.jpg')",
       },
       borderColor: {
         "border-color-primary": "#FFEA9F",
